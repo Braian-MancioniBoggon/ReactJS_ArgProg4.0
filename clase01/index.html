@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seguro No Pagamos Cooperativa</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <main>
+        <form id="formContacto" onsubmit="return false;">
+            <h1>Solicitud de contacto</h1>
+            <input type="text" name="nombre" id="campoNombre" autocomplete="off" placeholder="Nombre" required>
+            <input type="text" name="apellido" id="campoApellido" autocomplete="off" placeholder="Apellido" required>
+            <input type="number" name="dni" id="campoDni" autocomplete="off" placeholder="DNI" required>
+            <input type="email" name="email" id="campoEmail" autocomplete="off" placeholder="Email" required>
+            <input type="number" name="telefono" id="campoTelefono" autocomplete="off" placeholder="Teléfono" required>
+            <label for="seguro" title="Este campo es obligatorio" id="labelSeguro">Tipo de seguro</label>
+            <select name="seguro" id="campoSeguro" required>
+                <option value="" disabled selected hidden>Seleccionar plan</option>
+                <option value="$500">Básico</option>
+                <option value="$1000">Intermedio</option>
+                <option value="$1500">Premium</option>
+            </select>
+            <p id="valorPlan"><b>Valor:</b> </p>
+            <button type="submit" id="btnEnviar">Enviar solicitud</button>
+        </form>
+        <div id="notificacion"></div>
+    </main>
+    <script src="js/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+</body>
+</html>
