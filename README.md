@@ -14,7 +14,8 @@ Los datos que se deben solicitar son los siguientes:
 - Tipo de seguro:
   - Basíco
   - Intermedio
-  - Premium<br>
+  - Premium
+  <br>
 Al seleccionar el tipo de seguro (básico, intermedio, premium) se deberá mostrar en pantalla el valor de cada uno:
 - Basíco: $500
 - Intermedio: $1000
